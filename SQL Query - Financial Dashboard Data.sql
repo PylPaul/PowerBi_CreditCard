@@ -73,7 +73,19 @@ ROWTERMINATOR='\n',
 FIRSTROW=2);
 
 
+BULK INSERT cc_detail
+FROM 'C:\PP Projects\PowerBi\cc_add.csv'
+WITH(
+FIELDTERMINATOR=',',
+ROWTERMINATOR='\n',
+FIRSTROW=2);
 
+BULK INSERT cust_detail
+FROM 'C:\PP Projects\PowerBi\cust_add.csv'
+WITH(
+FIELDTERMINATOR=',',
+ROWTERMINATOR='\n',
+FIRSTROW=2);
 
 -- If you are getting below error, then use the below point:  
    -- ERROR:  date/time field value out of range: "0"
